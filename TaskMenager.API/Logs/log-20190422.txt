@@ -1,0 +1,274 @@
+[00:00 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[00:00 INF] Start installing Hangfire SQL objects...
+[00:00 INF] Hangfire SQL objects installed.
+[00:00 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[00:00 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[00:00 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[00:00 INF] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+[00:00 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[00:00 INF] Request finished in 30.9499ms 200 
+[00:00 INF] Server desktop-7gll7lj:16696:f2e61b49 successfully announced in 730,5072 ms
+[00:00 INF] Server desktop-7gll7lj:16696:f2e61b49 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[00:00 INF] 3 servers were removed due to timeout
+[00:00 INF] Executing endpoint '405 HTTP Method Not Supported'
+[00:00 INF] Executed endpoint '405 HTTP Method Not Supported'
+[00:00 INF] Server desktop-7gll7lj:16696:f2e61b49 all the dispatchers started
+[00:00 INF] Request finished in 595.6743ms 405 
+[10:49 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[10:49 INF] Start installing Hangfire SQL objects...
+[10:49 INF] Hangfire SQL objects installed.
+[10:50 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[10:50 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[10:50 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[10:50 INF] Server desktop-7gll7lj:22512:ffb16b85 successfully announced in 288,9979 ms
+[10:50 INF] Server desktop-7gll7lj:22512:ffb16b85 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[10:50 INF] 1 servers were removed due to timeout
+[10:50 INF] Server desktop-7gll7lj:22512:ffb16b85 all the dispatchers started
+[10:50 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[10:50 INF] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+[10:50 INF] Request finished in 36.3802ms 200 
+[10:50 INF] Executing endpoint '405 HTTP Method Not Supported'
+[10:50 INF] Executed endpoint '405 HTTP Method Not Supported'
+[10:50 INF] Request finished in 405.1384ms 405 
+[10:50 INF] User Admin get list
+[10:50 WRN] Failed to process the job '20': an exception occurred. Retry attempt 9 of 10 will be performed in 01:09:43.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 SMTP; Client was not authenticated to send anonymous mail during MAIL FROM [VI1PR0701CA0035.eurprd07.prod.outlook.com]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[10:52 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[10:52 INF] Start installing Hangfire SQL objects...
+[10:52 INF] Hangfire SQL objects installed.
+[10:52 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[10:52 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[10:52 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[10:52 INF] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+[10:52 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[10:52 INF] Request finished in 18.918ms 200 
+[10:52 INF] Executing endpoint '405 HTTP Method Not Supported'
+[10:52 INF] Executed endpoint '405 HTTP Method Not Supported'
+[10:52 INF] Request finished in 165.8098ms 405 
+[10:52 INF] Server desktop-7gll7lj:11908:f15ee0db successfully announced in 362,763 ms
+[10:52 INF] Server desktop-7gll7lj:11908:f15ee0db is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[10:52 INF] Server desktop-7gll7lj:11908:f15ee0db all the dispatchers started
+[10:54 INF] Request starting HTTP/1.1 POST http://localhost:44376/auth/token  0
+[10:54 INF] Executing endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[10:54 INF] Route matched with {action = "GetToken", controller = "Auth"}. Executing action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)
+[10:54 INF] Executing action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) - Validation state: "Valid"
+[10:55 ERR] GlobalExceptionFilter
+[10:55 INF] Executed action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) in 7182.2026000000005ms
+[10:55 INF] Executed endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[10:55 ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at TaskMenager.API.Controllers.Auth.AuthController.GetToken() in D:\Projekty\TaskMenager\TaskMenager\TaskMenager.API\Controllers\Auth\AuthController.cs:line 21
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[10:55 INF] Request finished in 7774.7535ms 500 text/html; charset=utf-8
+[10:57 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[10:57 INF] Start installing Hangfire SQL objects...
+[10:57 INF] Hangfire SQL objects installed.
+[10:57 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[10:57 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[10:57 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[10:57 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[10:57 INF] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+[10:57 INF] Request finished in 26.0714ms 200 
+[10:57 INF] Executing endpoint '405 HTTP Method Not Supported'
+[10:57 INF] Executed endpoint '405 HTTP Method Not Supported'
+[10:57 INF] Request finished in 187.3906ms 405 
+[10:57 INF] Server desktop-7gll7lj:6672:bf90e614 successfully announced in 390,931 ms
+[10:57 INF] Server desktop-7gll7lj:6672:bf90e614 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[10:57 INF] 1 servers were removed due to timeout
+[10:57 INF] Server desktop-7gll7lj:6672:bf90e614 all the dispatchers started
+[10:57 INF] Request starting HTTP/1.1 POST http://localhost:44376/auth/token  0
+[10:57 INF] Executing endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[10:57 INF] Route matched with {action = "GetToken", controller = "Auth"}. Executing action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)
+[10:57 INF] Executing action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) - Validation state: "Valid"
+[10:58 ERR] GlobalExceptionFilter
+[10:58 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.ErrorResponse'.
+[10:58 INF] Executed action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) in 4586.5610000000006ms
+[10:58 INF] Executed endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[10:58 INF] Request finished in 4614.6158ms 500 application/json; charset=utf-8
+[13:34 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13:34 INF] Start installing Hangfire SQL objects...
+[13:34 INF] Hangfire SQL objects installed.
+[13:34 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[13:34 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[13:34 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[13:34 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[13:34 INF] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+[13:34 INF] Request finished in 25.5069ms 200 
+[13:34 INF] Executing endpoint '405 HTTP Method Not Supported'
+[13:34 INF] Executed endpoint '405 HTTP Method Not Supported'
+[13:34 INF] Request finished in 222.2067ms 405 
+[13:34 INF] Server desktop-7gll7lj:16728:a142c4ef successfully announced in 461,4142 ms
+[13:34 INF] Server desktop-7gll7lj:16728:a142c4ef is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[13:34 INF] 2 servers were removed due to timeout
+[13:34 INF] Server desktop-7gll7lj:16728:a142c4ef all the dispatchers started
+[13:34 INF] User Admin get list
+[13:35 WRN] Failed to process the job '20': an exception occurred. Retry attempt 10 of 10 will be performed in 01:49:36.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 SMTP; Client was not authenticated to send anonymous mail during MAIL FROM [VI1PR0501CA0043.eurprd05.prod.outlook.com]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[13:35 INF] Request starting HTTP/1.1 POST http://localhost:44376/auth/token  0
+[13:35 INF] Executing endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:35 INF] Route matched with {action = "GetToken", controller = "Auth"}. Executing action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)
+[13:35 INF] Executing action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) - Validation state: "Valid"
+[13:35 INF] Executed action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 251.95170000000002ms.
+[13:35 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[13:35 INF] Executed action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) in 310.6341ms
+[13:35 INF] Executed endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:35 INF] Request finished in 374.6688ms 200 application/json; charset=utf-8
+[13:35 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/Login/Laura/wolski  0
+[13:35 INF] Request finished in 1.2102ms 404 
+[13:35 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/Login/Laura/wolski  0
+[13:35 INF] Request finished in 2.0051ms 404 
+[13:35 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/Login/Laura/wolski  
+[13:35 INF] Request finished in 0.3378ms 404 
+[13:35 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/Login/Laura/wolski  
+[13:35 INF] Request finished in 0.3095ms 404 
+[13:36 INF] Request starting HTTP/1.1 POST http://localhost:44376/auth/token  0
+[13:36 INF] Executing endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:36 INF] Route matched with {action = "GetToken", controller = "Auth"}. Executing action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)
+[13:36 INF] Executing action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) - Validation state: "Valid"
+[13:36 INF] Executed action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.53860000000000008ms.
+[13:36 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[13:36 INF] Executed action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) in 3.0688ms
+[13:36 INF] Executed endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:36 INF] Request finished in 14.0189ms 200 application/json; charset=utf-8
+[13:36 INF] Request starting HTTP/1.1 POST http://localhost:44376/auth/token  0
+[13:36 INF] Executing endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:36 INF] Route matched with {action = "GetToken", controller = "Auth"}. Executing action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)
+[13:36 INF] Executing action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) - Validation state: "Valid"
+[13:36 INF] Executed action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3481ms.
+[13:36 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[13:36 INF] Executed action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) in 1.0062ms
+[13:36 INF] Executed endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:36 INF] Request finished in 1.8601ms 200 application/json; charset=utf-8
+[13:36 INF] Request starting HTTP/1.1 POST http://localhost:44376/auth/token  0
+[13:36 INF] Executing endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:36 INF] Route matched with {action = "GetToken", controller = "Auth"}. Executing action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)
+[13:36 INF] Executing action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) - Validation state: "Valid"
+[13:36 INF] Executed action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.1539ms.
+[13:36 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[13:36 INF] Executed action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) in 0.6581ms
+[13:36 INF] Executed endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:36 INF] Request finished in 1.2529ms 200 application/json; charset=utf-8
+[13:37 INF] Request starting HTTP/1.1 POST http://localhost:44376/auth/token  0
+[13:37 INF] Executing endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:37 INF] Route matched with {action = "GetToken", controller = "Auth"}. Executing action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)
+[13:37 INF] Executing action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) - Validation state: "Valid"
+[13:37 INF] Executed action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2168.992ms.
+[13:37 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[13:37 INF] Executed action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) in 2170.2823000000003ms
+[13:37 INF] Executed endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:37 INF] Request finished in 2170.9872ms 200 application/json; charset=utf-8
+[13:37 INF] Request starting HTTP/1.1 POST http://localhost:44376/auth/token application/json 0
+[13:37 INF] Executing endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:37 INF] Route matched with {action = "GetToken", controller = "Auth"}. Executing action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)
+[13:37 INF] Executing action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) - Validation state: "Valid"
+[13:37 INF] Executed action method TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1298.7791ms.
+[13:37 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[13:37 INF] Executed action TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API) in 1299.2246ms
+[13:37 INF] Executed endpoint 'TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)'
+[13:37 INF] Request finished in 1299.9562ms 200 application/json; charset=utf-8
+[13:37 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/Laura/wolski application/json 
+[13:37 INF] Successfully validated the token.
+[13:37 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[13:37 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[13:37 INF] Authorization was successful.
+[13:37 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["Laura","wolski"]) - Validation state: "Valid"
+[13:37 INF] User Laura logged
+[13:37 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4856.234ms.
+[13:37 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[13:37 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 5096.5406ms
+[13:37 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[13:37 INF] Request finished in 5290.661ms 200 application/json; charset=utf-8
+[13:38 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13:38 INF] Start installing Hangfire SQL objects...
+[13:38 INF] Hangfire SQL objects installed.
+[13:38 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[13:38 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[13:38 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[13:38 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/Laura/wolski application/json 
+[13:38 INF] Successfully validated the token.
+[13:38 INF] Server desktop-7gll7lj:13928:7e2c16ff successfully announced in 308,8996 ms
+[13:38 INF] Server desktop-7gll7lj:13928:7e2c16ff is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[13:38 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[13:38 INF] Server desktop-7gll7lj:13928:7e2c16ff all the dispatchers started
+[13:38 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[13:38 INF] Authorization was successful.
+[13:38 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["Laura","wolski"]) - Validation state: "Valid"
+[13:38 INF] User Laura logged
+[13:38 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 911.8419ms.
+[13:38 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[13:38 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 1105.5837000000001ms
+[13:38 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[13:38 INF] Request finished in 1398.8062ms 200 application/json; charset=utf-8
+[13:39 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[13:39 INF] Executing endpoint '405 HTTP Method Not Supported'
+[13:39 INF] Executed endpoint '405 HTTP Method Not Supported'
+[13:39 INF] Request finished in 8.5927ms 405 
+[13:39 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/Laura/wolski application/json 
+[13:39 INF] Successfully validated the token.
+[13:39 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[13:39 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[13:39 INF] Authorization was successful.
+[13:39 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["Laura","wolski"]) - Validation state: "Valid"
+[13:39 INF] User Laura logged

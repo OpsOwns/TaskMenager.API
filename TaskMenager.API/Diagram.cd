@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TaskMenager.API.Program" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskMenager.API.Startup" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAIgAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskMenager.API.Controllers.Auth.AuthController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\Auth\AuthController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskMenager.API.Controllers.Comments.CommentController" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAAAAAAAAAIAABAAAAAAAAAAAAoAA=</HashCode>
+      <FileName>Controllers\Comments\CommentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskMenager.API.Controllers.ValuesController" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAIAAAAAhAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Home\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskMenager.API.Controllers.Tasks.TaskController" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAAAAAAAAAIAEBACAAAAgAAAAAoAA=</HashCode>
+      <FileName>Controllers\Tasks\TaskController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskMenager.API.Controllers.Users.UserController" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAIAAAAAAAAAAAAAAAAAAIAEBAAAAAAAQAAAAoAA=</HashCode>
+      <FileName>Controllers\Users\UserController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskMenager.API.HangFire.HangFireAuthorizationFilter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>HangFire\HangFireAuthorization.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TaskMenager.API.Models.UserResponse" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\UserResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

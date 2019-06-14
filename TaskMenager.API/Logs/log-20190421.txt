@@ -1,0 +1,29 @@
+2019-04-21 23:39:28.747 +02:00 [Information] User profile is available. Using '"C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-04-21 23:39:28.971 +02:00 [Information] Start installing Hangfire SQL objects...
+2019-04-21 23:39:29.236 +02:00 [Information] Hangfire SQL objects installed.
+2019-04-21 23:39:29.710 +02:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+2019-04-21 23:39:29.714 +02:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2019-04-21 23:39:29.718 +02:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2019-04-21 23:39:30.101 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+2019-04-21 23:39:30.101 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+2019-04-21 23:39:30.130 +02:00 [Information] Request finished in 27.1679ms 200 
+2019-04-21 23:39:30.222 +02:00 [Information] Server desktop-7gll7lj:9704:c75f29d6 successfully announced in 413,016 ms
+2019-04-21 23:39:30.263 +02:00 [Information] Server desktop-7gll7lj:9704:c75f29d6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2019-04-21 23:39:30.534 +02:00 [Information] Server desktop-7gll7lj:9704:c75f29d6 all the dispatchers started
+2019-04-21 23:39:30.668 +02:00 [Information] Executing endpoint '"405 HTTP Method Not Supported"'
+2019-04-21 23:39:30.674 +02:00 [Information] Executed endpoint '"405 HTTP Method Not Supported"'
+2019-04-21 23:39:30.692 +02:00 [Information] Request finished in 593.1183ms 405 
+2019-04-21 23:39:34.533 +02:00 [Information] Request starting HTTP/1.1 POST http://localhost:44376/auth/token  0
+2019-04-21 23:39:34.541 +02:00 [Information] Executing endpoint '"TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)"'
+2019-04-21 23:39:34.560 +02:00 [Information] Route matched with "{action = \"GetToken\", controller = \"Auth\"}". Executing action "TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)"
+2019-04-21 23:39:34.581 +02:00 [Information] Executing action method "TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)" - Validation state: Valid
+2019-04-21 23:39:34.585 +02:00 [Error] Błąd krzysztofa
+2019-04-21 23:39:34.635 +02:00 [Information] Executed action method "TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 45.8421ms.
+2019-04-21 23:39:34.649 +02:00 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-21 23:39:34.677 +02:00 [Information] Executed action "TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)" in 108.9658ms
+2019-04-21 23:39:34.682 +02:00 [Information] Executed endpoint '"TaskMenager.API.Controllers.Auth.AuthController.GetToken (TaskMenager.API)"'
+2019-04-21 23:39:34.688 +02:00 [Information] Request finished in 154.8219ms 200 application/json; charset=utf-8

@@ -1,0 +1,858 @@
+[11:01 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[11:01 INF] Start installing Hangfire SQL objects...
+[11:01 INF] Hangfire SQL objects installed.
+[11:01 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[11:01 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[11:01 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[11:01 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[11:01 INF] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+[11:01 INF] Request finished in 106.3166ms 200 
+[11:01 INF] Executing endpoint '405 HTTP Method Not Supported'
+[11:01 INF] Executed endpoint '405 HTTP Method Not Supported'
+[11:01 INF] Request finished in 534.7523ms 405 
+[11:01 INF] Server desktop-7gll7lj:24316:cd8cce85 successfully announced in 1120,597 ms
+[11:01 INF] Server desktop-7gll7lj:24316:cd8cce85 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[11:01 INF] 1 servers were removed due to timeout
+[11:01 INF] Server desktop-7gll7lj:24316:cd8cce85 all the dispatchers started
+[11:01 INF] User Admin get list
+[11:01 INF] User Admin get list
+[11:01 INF] User Admin get list
+[11:01 ERR] Failed to process the job '10021': an exception occurred.
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Nieznany host
+   at System.Net.Dns.HostResolutionEndHelper(IAsyncResult asyncResult)
+   at System.Net.Dns.EndGetHostAddresses(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoDnsCallback(IAsyncResult result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.DnsCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpTransport.EndGetConnection(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[11:01 WRN] Failed to process the job '10022': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:39.
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Nieznany host
+   at System.Net.Dns.HostResolutionEndHelper(IAsyncResult asyncResult)
+   at System.Net.Dns.EndGetHostAddresses(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoDnsCallback(IAsyncResult result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.DnsCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpTransport.EndGetConnection(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[11:01 ERR] Failed to process the job '10020': an exception occurred.
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Nieznany host
+   at System.Net.Dns.HostResolutionEndHelper(IAsyncResult asyncResult)
+   at System.Net.Dns.EndGetHostAddresses(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoDnsCallback(IAsyncResult result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.DnsCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpTransport.EndGetConnection(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[11:01 INF] Request starting HTTP/1.1 GET http://localhost:44376/home/notify  
+[11:01 INF] Request finished in 11.5515ms 404 
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs  
+[11:02 INF] Request finished in 488.143ms 200 text/html
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/js1710  
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/css1710  
+[11:02 INF] Request finished in 93.1073ms 200 text/css
+[11:02 INF] Request finished in 93.1089ms 200 application/javascript
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs  
+[11:02 INF] Request finished in 9.9265ms 200 text/html
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/css1710  
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/js1710  
+[11:02 INF] Request finished in 6.7567ms 200 text/css
+[11:02 INF] Request finished in 29.7608ms 200 application/javascript
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/fonts/glyphicons-halflings-regular/woff2  
+[11:02 INF] Request finished in 4.4503ms 200 font/woff2
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/favicon.ico  
+[11:02 INF] Request finished in 0.8153ms 404 
+[11:02 INF] Request starting HTTP/1.1 POST http://localhost:44376/jobs/stats application/x-www-form-urlencoded; charset=UTF-8 228
+[11:02 INF] Request finished in 189.0839ms 200 application/json
+[11:02 INF] Request starting HTTP/1.1 POST http://localhost:44376/jobs/stats application/x-www-form-urlencoded; charset=UTF-8 228
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/jobs/enqueued  
+[11:02 INF] Request finished in 42.2016ms 200 application/json
+[11:02 INF] Request finished in 103.0142ms 200 text/html
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/css1710  
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/js1710  
+[11:02 INF] Request finished in 51.2419ms 200 text/css
+[11:02 INF] Request finished in 91.4873ms 200 application/javascript
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/fonts/glyphicons-halflings-regular/woff2  
+[11:02 INF] Request finished in 1.7037ms 200 font/woff2
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/jobs/failed  
+[11:02 INF] Request starting HTTP/1.1 POST http://localhost:44376/jobs/stats application/x-www-form-urlencoded; charset=UTF-8 392
+[11:02 INF] Request finished in 15.7161ms 200 application/json
+[11:02 INF] Request finished in 413.9667ms 200 text/html
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/css1710  
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/js1710  
+[11:02 INF] Request finished in 27.7176ms 200 text/css
+[11:02 INF] Request finished in 58.3923ms 200 application/javascript
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/fonts/glyphicons-halflings-regular/woff2  
+[11:02 INF] Request finished in 2.0104ms 200 font/woff2
+[11:02 INF] Request starting HTTP/1.1 POST http://localhost:44376/jobs/stats application/x-www-form-urlencoded; charset=UTF-8 392
+[11:02 INF] Request finished in 7.7593ms 200 application/json
+[11:02 INF] Request starting HTTP/1.1 POST http://localhost:44376/jobs/stats application/x-www-form-urlencoded; charset=UTF-8 392
+[11:02 INF] Request finished in 2.1171ms 200 application/json
+[11:02 INF] Request starting HTTP/1.1 POST http://localhost:44376/jobs/stats application/x-www-form-urlencoded; charset=UTF-8 392
+[11:02 INF] Request finished in 2.1746ms 200 application/json
+[11:02 INF] User Admin get list
+[11:02 WRN] Failed to process the job '10022': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:46.
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Nieznany host
+   at System.Net.Dns.HostResolutionEndHelper(IAsyncResult asyncResult)
+   at System.Net.Dns.EndGetHostAddresses(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoDnsCallback(IAsyncResult result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.DnsCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpTransport.EndGetConnection(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/jobs/scheduled  
+[11:02 INF] Request finished in 48.5581ms 200 text/html
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/css1710  
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/js1710  
+[11:02 INF] Request finished in 10.6052ms 200 text/css
+[11:02 INF] Request finished in 30.1529ms 200 application/javascript
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/fonts/glyphicons-halflings-regular/woff2  
+[11:02 INF] Request finished in 1.4894ms 200 font/woff2
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/jobs/scheduled  
+[11:02 INF] Request finished in 5.8691ms 200 text/html
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/js1710  
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/css1710  
+[11:02 INF] Request finished in 5.8576ms 200 text/css
+[11:02 INF] Request finished in 34.6427ms 200 application/javascript
+[11:02 INF] Request starting HTTP/1.1 GET http://localhost:44376/jobs/fonts/glyphicons-halflings-regular/woff2  
+[11:02 INF] Request finished in 2.056ms 200 font/woff2
+[11:02 INF] Request starting HTTP/1.1 POST http://localhost:44376/jobs/stats application/x-www-form-urlencoded; charset=UTF-8 392
+[11:02 INF] Request finished in 2.2013ms 200 application/json
+[11:04 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[11:04 INF] Start installing Hangfire SQL objects...
+[11:04 INF] Hangfire SQL objects installed.
+[11:04 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[11:04 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[11:04 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[11:04 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[11:04 INF] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+[11:04 INF] Request finished in 36.7364ms 200 
+[11:04 INF] Executing endpoint '405 HTTP Method Not Supported'
+[11:04 INF] Executed endpoint '405 HTTP Method Not Supported'
+[11:04 INF] Request finished in 512.0803ms 405 
+[11:04 INF] Server desktop-7gll7lj:23604:1938f6c2 successfully announced in 1345,2315 ms
+[11:04 INF] Server desktop-7gll7lj:23604:1938f6c2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[11:04 INF] Server desktop-7gll7lj:23604:1938f6c2 all the dispatchers started
+[11:04 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/admin/Adminek123  
+[11:04 INF] Successfully validated the token.
+[11:04 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:04 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:04 INF] Authorization was successful.
+[11:04 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["admin","Adminek123"]) - Validation state: "Valid"
+[11:04 INF] User Admin get list
+[11:04 WRN] Failed to process the job '10022': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:40.
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Nieznany host
+   at System.Net.Dns.HostResolutionEndHelper(IAsyncResult asyncResult)
+   at System.Net.Dns.EndGetHostAddresses(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoDnsCallback(IAsyncResult result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.DnsCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpTransport.EndGetConnection(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[11:04 INF] User admin try loggin
+[11:04 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 953.4637ms.
+[11:04 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:04 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 1233.1425000000002ms
+[11:04 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:04 INF] Request finished in 1586.7221ms 200 application/json; charset=utf-8
+[11:04 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/admin/admin123  
+[11:04 INF] Successfully validated the token.
+[11:04 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:04 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:04 INF] Authorization was successful.
+[11:04 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["admin","admin123"]) - Validation state: "Valid"
+[11:04 INF] User admin logged
+[11:04 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 168.37310000000002ms.
+[11:04 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:04 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 170.8393ms
+[11:04 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:04 INF] Request finished in 174.1183ms 200 application/json; charset=utf-8
+[11:04 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:04 INF] Successfully validated the token.
+[11:04 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:04 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:04 INF] Successfully validated the token.
+[11:04 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:04 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:04 INF] Authorization was successful.
+[11:04 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:04 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:04 INF] Authorization was successful.
+[11:04 INF] User admin get list
+[11:04 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:04 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 217.8419ms.
+[11:04 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:04 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 220.9559ms
+[11:04 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:04 INF] Request finished in 298.3196ms 200 application/json; charset=utf-8
+[11:04 INF] User  get list
+[11:04 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 178.6663ms.
+[11:04 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:04 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 373.9438ms
+[11:04 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:04 INF] Request finished in 400.7061ms 200 application/json; charset=utf-8
+[11:05 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/user/Save application/json; charset=utf-8 258
+[11:05 INF] Successfully validated the token.
+[11:05 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API)'
+[11:05 INF] Route matched with {action = "Save", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API)
+[11:05 INF] Authorization was successful.
+[11:05 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API) with arguments (["Tbx6WXrZlkvOAaldW3MrQzaB76FegYKJXO8qwsojR9clb5L3DcWpCWaaz6iibjkZCvc52wgJJdZ0HzqbEl3V3swcsKHyaWw9E+hkezI3dV8pFqwc74GzZgdw3AREPVNKoXLVwi+EOAwLWLIDc/qah3oLcqEN8M8B5IF2jx2rcn7yKS0F2tl2w4/7FQVK5KX6zSrzPdWdVl0TO3u2ufSj1JLLhMcjUEIig+HuRPonmIRH36z9V6UQ18y1KY2uRgo5"]) - Validation state: "Valid"
+[11:05 INF] Insert value: {"User_Id":0,"Login":"Januszex","Password":"$2b$10$WpizuiCSCGJvFT31br3tJOBUr0xfIiIa64sQpBoOc2as5O9MczhXK","Email":"januszek@o2.pl","Flag":"U","DateCreate":"2019-04-30T11:05:05.3589277+02:00","LockAccount":false,"$type":"UserSaveCommand"}
+[11:05 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 390.8242ms.
+[11:05 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:05 INF] Executed action TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API) in 418.4758ms
+[11:05 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API)'
+[11:05 INF] Request finished in 428.0476ms 200 application/json; charset=utf-8
+[11:05 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/Delete/14  
+[11:05 INF] Successfully validated the token.
+[11:05 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)'
+[11:05 INF] Route matched with {action = "Delete", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)
+[11:05 INF] Authorization was successful.
+[11:05 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API) with arguments (["14"]) - Validation state: "Valid"
+[11:05 INF] Delete value: {"User_Id":14,"$type":"UserDeleteCommand"}
+[11:05 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 174.0235ms.
+[11:05 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:05 INF] Executed action TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API) in 175.0745ms
+[11:05 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)'
+[11:05 INF] Request finished in 194.5922ms 200 application/json; charset=utf-8
+[11:05 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:05 INF] Successfully validated the token.
+[11:05 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:05 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:05 INF] Authorization was successful.
+[11:05 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:05 INF] User admin get list
+[11:05 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.0550000000000006ms.
+[11:05 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:05 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 6.9271ms
+[11:05 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:05 INF] Request finished in 9.0147ms 200 application/json; charset=utf-8
+[11:05 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/Delete/3  
+[11:05 INF] Successfully validated the token.
+[11:05 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)'
+[11:05 INF] Route matched with {action = "Delete", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)
+[11:05 INF] Authorization was successful.
+[11:05 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API) with arguments (["3"]) - Validation state: "Valid"
+[11:05 INF] Delete value: {"User_Id":3,"$type":"UserDeleteCommand"}
+[11:05 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.6773ms.
+[11:05 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:05 INF] Executed action TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API) in 16.5195ms
+[11:05 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)'
+[11:05 INF] Request finished in 18.4269ms 200 application/json; charset=utf-8
+[11:05 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:05 INF] Successfully validated the token.
+[11:05 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:05 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:05 INF] Authorization was successful.
+[11:05 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:05 INF] User admin get list
+[11:05 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.4223000000000003ms.
+[11:05 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:05 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 4.2569ms
+[11:05 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:05 INF] Request finished in 4.8317ms 200 application/json; charset=utf-8
+[11:05 INF] User Admin get list
+[11:05 WRN] Failed to process the job '10022': an exception occurred. Retry attempt 4 of 10 will be performed in 00:03:24.
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Nieznany host
+   at System.Net.Dns.HostResolutionEndHelper(IAsyncResult asyncResult)
+   at System.Net.Dns.EndGetHostAddresses(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoDnsCallback(IAsyncResult result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.DnsCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpTransport.EndGetConnection(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[11:06 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/task/Save application/json; charset=utf-8 302
+[11:06 INF] Successfully validated the token.
+[11:06 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)'
+[11:06 INF] Route matched with {action = "Save", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)
+[11:06 INF] Authorization was successful.
+[11:06 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API) with arguments (["URGPelwppR20rbgqoQ/e+KwAIUjSCDGpE8KWI0Sey2FkoiTcx3k7G7Cxi4yqUGFWracLI/bL6KBZ17rmIdBrDP3J/OarhVaDIArxw7KvwyIsO3CDDVDxU4DyWLJG/RR7Q95L7f6ivFD49fZf4euCvFcgqxVLuBFboT3WM04mEIWutmFN8HxyU/fYesMJ59lYi7CATQzMNcluOCbL2jnSmYw/vsbyZ2HYhKMVT4lQgouMDVK/KCvGrA6Q0Z/+4I2uHbbNSy+Cc9VaMEC3S8UoFl/mjFrP0nF9Cfh3Ew/dll0="]) - Validation state: "Valid"
+[11:06 INF] Insert value: {"CurrentTask":"Odkurzanie","UserDescription":"Brak","Done":false,"FK_User_Id":32,"DateCreate":"2019-04-30T11:06:10.8102772+02:00","DateEnd":"2019-05-01T11:06:10.8102772+02:00","$type":"TaskSaveCommand"}
+[11:06 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 35.5885ms.
+[11:06 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:06 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API) in 36.731100000000005ms
+[11:06 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)'
+[11:06 INF] Request finished in 61.6833ms 200 application/json; charset=utf-8
+[11:06 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:06 INF] Successfully validated the token.
+[11:06 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:06 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:06 INF] Authorization was successful.
+[11:06 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:06 INF] User  get list
+[11:06 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.7634ms.
+[11:06 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:06 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 19.3063ms
+[11:06 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:06 INF] Request finished in 20.7551ms 200 application/json; charset=utf-8
+[11:06 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/Januszex/Januszek04  
+[11:06 INF] Successfully validated the token.
+[11:06 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:06 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:06 INF] Authorization was successful.
+[11:06 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["Januszex","Januszek04"]) - Validation state: "Valid"
+[11:06 INF] User Januszex try loggin
+[11:06 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 112.95880000000001ms.
+[11:06 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:06 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 113.885ms
+[11:06 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:06 INF] Request finished in 114.5604ms 200 application/json; charset=utf-8
+[11:06 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/Januszex/januszek04  
+[11:06 INF] Successfully validated the token.
+[11:06 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:06 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:06 INF] Authorization was successful.
+[11:06 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["Januszex","januszek04"]) - Validation state: "Valid"
+[11:06 INF] User Januszex try loggin
+[11:06 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 142.5797ms.
+[11:06 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:06 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 143.78390000000002ms
+[11:06 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:06 INF] Request finished in 144.8616ms 200 application/json; charset=utf-8
+[11:06 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/admin/admin123  
+[11:06 INF] Successfully validated the token.
+[11:06 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:06 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:06 INF] Authorization was successful.
+[11:06 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["admin","admin123"]) - Validation state: "Valid"
+[11:06 INF] User admin logged
+[11:06 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 113.7676ms.
+[11:06 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:06 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 114.4894ms
+[11:06 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:06 INF] Request finished in 115.0924ms 200 application/json; charset=utf-8
+[11:06 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:06 INF] Successfully validated the token.
+[11:06 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:06 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:06 INF] Authorization was successful.
+[11:06 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:06 INF] User admin get list
+[11:06 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:06 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 33.334700000000005ms.
+[11:06 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:06 INF] Successfully validated the token.
+[11:06 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 35.5922ms
+[11:06 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:06 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:06 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:06 INF] Request finished in 37.0554ms 200 application/json; charset=utf-8
+[11:06 INF] Authorization was successful.
+[11:06 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:06 INF] User  get list
+[11:06 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.1691ms.
+[11:06 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:06 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 15.8138ms
+[11:06 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:06 INF] Request finished in 18.6564ms 200 application/json; charset=utf-8
+[11:07 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/user/Save application/json; charset=utf-8 282
+[11:07 INF] Successfully validated the token.
+[11:07 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API)'
+[11:07 INF] Route matched with {action = "Save", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API)
+[11:07 INF] Authorization was successful.
+[11:07 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API) with arguments (["Tbx6WXrZlkvOAaldW3MrQ5qmh2NVZvmsXsOApnapgWdW0gVAlkpsOWf4QhE5/xDkCla+86CI+MNO7IrVpjcWcjQBkG2wtVNzGUYGzwsVAFzzBNbvUkr09JY8wDtUPbITBKGH8uinSzh8qllVZOWEWauxEWkk0Wa8xs5xQ9fGkpIvKjVgVQRSgHZqB3aIMEAElDBKJ10GO8OGZdWydbOFIX2P4VkdSFRXBesPkPWiMkFuyDgEzp8Xigt2504N41HNSN3QINqQtvasKSkYusvA/A=="]) - Validation state: "Valid"
+[11:07 INF] Insert value: {"User_Id":0,"Login":"Pracownik1","Password":"$2b$10$WpizuiCSCGJvFT31br3tJOkVpq2Pg2G8IIsXF1wAhY9QxnRheT5i6","Email":"pracownik@o2.pl","Flag":"U","DateCreate":"2019-04-30T11:07:16.3182951+02:00","LockAccount":false,"$type":"UserSaveCommand"}
+[11:07 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 161.0482ms.
+[11:07 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:07 INF] Executed action TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API) in 190.7918ms
+[11:07 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.Save (TaskMenager.API)'
+[11:07 INF] Request finished in 191.6843ms 200 application/json; charset=utf-8
+[11:07 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/Delete/10  
+[11:07 INF] Successfully validated the token.
+[11:07 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)'
+[11:07 INF] Route matched with {action = "Delete", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)
+[11:07 INF] Authorization was successful.
+[11:07 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API) with arguments (["10"]) - Validation state: "Valid"
+[11:07 INF] Delete value: {"User_Id":10,"$type":"UserDeleteCommand"}
+[11:07 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.3641000000000005ms.
+[11:07 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:07 INF] Executed action TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API) in 6.1659000000000006ms
+[11:07 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.Delete (TaskMenager.API)'
+[11:07 INF] Request finished in 6.838ms 200 application/json; charset=utf-8
+[11:07 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:07 INF] Successfully validated the token.
+[11:07 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:07 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:07 INF] Authorization was successful.
+[11:07 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:07 INF] User admin get list
+[11:07 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.6403ms.
+[11:07 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:07 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 14.7316ms
+[11:07 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:07 INF] Request finished in 16.4054ms 200 application/json; charset=utf-8
+[11:07 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/task/Save application/json; charset=utf-8 302
+[11:07 INF] Successfully validated the token.
+[11:07 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)'
+[11:07 INF] Route matched with {action = "Save", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)
+[11:07 INF] Authorization was successful.
+[11:07 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API) with arguments (["URGPelwppR20rbgqoQ/e+Fo3uoy0YH1+eBY4yIuxPgwcIxtPS6Njm1MmHKdG4mqFracLI/bL6KBZ17rmIdBrDP3J/OarhVaDIArxw7KvwyIsO3CDDVDxU4DyWLJG/RR7zMxzD1MyKcSNf+PAIeo69lcgqxVLuBFboT3WM04mEIWdIMwzIiNSTQasr6rhEfr5VGA3FtQde4gLT1Xp5CC2YIw/vsbyZ2HYhKMVT4lQgotYyis7f2W66DarcSn5QDlMHbbNSy+Cc9VaMEC3S8UoFl/mjFrP0nF9Cfh3Ew/dll0="]) - Validation state: "Valid"
+[11:07 INF] Insert value: {"CurrentTask":"Sprzatanie","UserDescription":"Brak","Done":false,"FK_User_Id":33,"DateCreate":"2019-04-30T11:07:39.9353927+02:00","DateEnd":"2019-05-01T11:07:39.9363932+02:00","$type":"TaskSaveCommand"}
+[11:07 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 181.4034ms.
+[11:07 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:07 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API) in 182.51520000000002ms
+[11:07 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)'
+[11:07 INF] Request finished in 203.6074ms 200 application/json; charset=utf-8
+[11:07 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:07 INF] Successfully validated the token.
+[11:07 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:07 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:07 INF] Authorization was successful.
+[11:07 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:07 INF] User  get list
+[11:07 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.611ms.
+[11:07 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:07 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 28.642500000000002ms
+[11:07 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:07 INF] Request finished in 31.4523ms 200 application/json; charset=utf-8
+[11:07 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/Pracownik1/Pracownik1  
+[11:07 INF] Successfully validated the token.
+[11:07 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:07 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:07 INF] Authorization was successful.
+[11:07 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["Pracownik1","Pracownik1"]) - Validation state: "Valid"
+[11:07 INF] User Pracownik1 logged
+[11:07 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 134.50060000000002ms.
+[11:07 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:07 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 135.23340000000002ms
+[11:07 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:07 INF] Request finished in 135.8993ms 200 application/json; charset=utf-8
+[11:07 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskList/33  
+[11:07 INF] Successfully validated the token.
+[11:07 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:07 INF] Route matched with {action = "TaskList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)
+[11:07 INF] Authorization was successful.
+[11:07 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) with arguments (["33"]) - Validation state: "Valid"
+[11:07 INF] User 33 get list
+[11:07 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 153.0799ms.
+[11:07 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:07 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) in 156.67950000000002ms
+[11:07 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:07 INF] Request finished in 181.5463ms 200 application/json; charset=utf-8
+[11:08 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/Delete/10  
+[11:08 INF] Successfully validated the token.
+[11:08 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)'
+[11:08 INF] Route matched with {action = "Delete", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)
+[11:08 INF] Authorization was successful.
+[11:08 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API) with arguments (["10"]) - Validation state: "Valid"
+[11:08 INF] Delete value: {"Task_id":10,"$type":"TaskDeleteCommand"}
+[11:08 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 120.462ms.
+[11:08 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:08 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API) in 120.9698ms
+[11:08 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)'
+[11:08 INF] Request finished in 125.1685ms 200 application/json; charset=utf-8
+[11:08 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/task/Update application/json; charset=utf-8 258
+[11:08 INF] Successfully validated the token.
+[11:08 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)'
+[11:08 INF] Route matched with {action = "Update", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)
+[11:08 INF] Authorization was successful.
+[11:08 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API) with arguments (["MJWyftbPTFq+c79cYiEEKQkmsFY3Eayq2Uqu5rjvMJtkWVFr1uYu1Cik4JQw/usXnq8ITAdiLTtr/5gzm3KP5eZcAFKQ2SDfwAfTWXK1rx3MnNgmwPN8AJ1bnWbLqxQ3x65xZIssmbEiSLVxJArBzJgMZCEAH4Zco8F1htnbYpfGPJjPWZpAfYVus7XYz7SkNoH/frtV/hJpseItC1/6sBcWTIA4Y8gdT14BtUjBQJW3VxbiMj3Aey5KVqgdMYJ/"]) - Validation state: "Valid"
+[11:08 INF] Update value: {"Task_Id":10,"CurrentTask":null,"UserDescription":"Posprz?tano","Done":true,"FK_User_Id":33,"DateEnd":"0001-01-01T00:00:00.0000000","$type":"TaskUpdateCommand"}
+[11:08 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6379.7576ms.
+[11:08 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:08 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API) in 6381.0376000000006ms
+[11:08 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)'
+[11:08 INF] Request finished in 6387.7033ms 200 application/json; charset=utf-8
+[11:08 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/comment/Save application/json; charset=utf-8 194
+[11:08 INF] Successfully validated the token.
+[11:08 INF] Executing endpoint 'TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)'
+[11:08 INF] Route matched with {action = "Save", controller = "Comment"}. Executing action TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)
+[11:08 INF] Authorization was successful.
+[11:08 INF] Executing action method TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API) with arguments (["GhL65Ib7QRh7cF2P7bTcH/3Np24v3bql8IWjUbTmPt6SyZthhb9aVD0WVCzwqKjoLDtwgw1Q8VOA8liyRv0Ue8TMGI5D7xjD35NharK7q2csa86TZDlKc4ZB2mB1zfyxHhFIlsE07xxNzf/4r/VhFythRyGZwgBdlhEPKjOnTZ1hWHImexY9uZhb28+hZslY"]) - Validation state: "Valid"
+[11:08 INF] Executed action method TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 16.325300000000002ms.
+[11:08 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:08 INF] Executed action TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API) in 22.4498ms
+[11:08 INF] Executed endpoint 'TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)'
+[11:08 INF] Request finished in 26.9778ms 400 application/json; charset=utf-8
+[11:08 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskList/33  
+[11:08 INF] Successfully validated the token.
+[11:08 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:08 INF] Route matched with {action = "TaskList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)
+[11:08 INF] Authorization was successful.
+[11:08 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) with arguments (["33"]) - Validation state: "Valid"
+[11:08 INF] User 33 get list
+[11:08 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.4844ms.
+[11:08 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:08 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) in 21.810200000000002ms
+[11:08 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:08 INF] Request finished in 23.5013ms 200 application/json; charset=utf-8
+[11:09 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/admin/admin123  
+[11:09 INF] Successfully validated the token.
+[11:09 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:09 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:09 INF] Authorization was successful.
+[11:09 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["admin","admin123"]) - Validation state: "Valid"
+[11:09 INF] User admin logged
+[11:09 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 111.4205ms.
+[11:09 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:09 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 112.3139ms
+[11:09 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:09 INF] Request finished in 112.9621ms 200 application/json; charset=utf-8
+[11:09 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:09 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:09 INF] Successfully validated the token.
+[11:09 INF] Successfully validated the token.
+[11:09 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:09 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:09 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:09 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:09 INF] Authorization was successful.
+[11:09 INF] Authorization was successful.
+[11:09 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:09 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:09 INF] User  get list
+[11:09 INF] User admin get list
+[11:09 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.9955ms.
+[11:09 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.6515ms.
+[11:09 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:09 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:09 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 11.416400000000001ms
+[11:09 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 11.7371ms
+[11:09 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:09 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:09 INF] Request finished in 13.0808ms 200 application/json; charset=utf-8
+[11:09 INF] Request finished in 13.2585ms 200 application/json; charset=utf-8
+[11:09 INF] 1 servers were removed due to timeout
+[11:09 INF] User Admin get list
+[11:09 WRN] Failed to process the job '10022': an exception occurred. Retry attempt 5 of 10 will be performed in 00:05:21.
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Nieznany host
+   at System.Net.Dns.HostResolutionEndHelper(IAsyncResult asyncResult)
+   at System.Net.Dns.EndGetHostAddresses(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoDnsCallback(IAsyncResult result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.DnsCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpTransport.EndGetConnection(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at TaskMenagerService.Services.NotifyService.Notify.NotifySender.SendNotify(UserCredentials user, NotifyQuery notify) in D:\Projekty\TaskMenager\TaskMenager\TaskMenagerService\Services\NotifyService\Notify\NotifySender.cs:line 33
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+[11:12 INF] User profile is available. Using 'C:\Users\Ops\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[11:12 INF] Start installing Hangfire SQL objects...
+[11:12 INF] Hangfire SQL objects installed.
+[11:12 INF] Starting Hangfire Server using job storage: 'SQL Server: DESKTOP-7GLL7LJ\OPSDB@TasksERP'
+[11:12 INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+[11:12 INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/admin/admin123  
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/auth/token  
+[11:12 INF] Request starting HTTP/1.1 DEBUG http://localhost:51754/  0
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/admin/admin123  
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/admin/admin123  
+[11:12 INF] Request finished in 109.2824ms 200 
+[11:12 INF] Executing endpoint '405 HTTP Method Not Supported'
+[11:12 INF] Executed endpoint '405 HTTP Method Not Supported'
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:12 INF] Request finished in 798.6809ms 405 
+[11:12 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:12 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:12 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:12 INF] Authorization was successful.
+[11:12 INF] Authorization was successful.
+[11:12 INF] Authorization was successful.
+[11:12 INF] Server desktop-7gll7lj:23776:1d35443e successfully announced in 1459,8896 ms
+[11:12 INF] Server desktop-7gll7lj:23776:1d35443e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[11:12 INF] Server desktop-7gll7lj:23776:1d35443e all the dispatchers started
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["admin","admin123"]) - Validation state: "Valid"
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["admin","admin123"]) - Validation state: "Valid"
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["admin","admin123"]) - Validation state: "Valid"
+[11:12 INF] User admin logged
+[11:12 INF] User admin logged
+[11:12 INF] User admin logged
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2991.734ms.
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2991.9105ms.
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2991.5772ms.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 5236.2733ms
+[11:12 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 5235.8361ms
+[11:12 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 5242.8068ms
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:12 INF] Request finished in 6259.5246ms 200 application/json; charset=utf-8
+[11:12 INF] Request finished in 6259.5398ms 200 application/json; charset=utf-8
+[11:12 INF] Request finished in 6259.523ms 200 application/json; charset=utf-8
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:12 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:12 INF] Authorization was successful.
+[11:12 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:12 INF] Authorization was successful.
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:12 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:12 INF] Authorization was successful.
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:12 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:12 INF] Authorization was successful.
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/UserList/admin  
+[11:12 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:12 INF] Authorization was successful.
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:12 INF] Route matched with {action = "UserList", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:12 INF] Authorization was successful.
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) with arguments (["admin"]) - Validation state: "Valid"
+[11:12 INF] User admin get list
+[11:12 INF] User admin get list
+[11:12 INF] User admin get list
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1040.0881ms.
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1708.2605ms.
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1269.7797ms.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 1272.9388000000001ms
+[11:12 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 1712.1209000000001ms
+[11:12 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API) in 1043.4439ms
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserList (TaskMenager.API)'
+[11:12 INF] Request finished in 1759.6695ms 200 application/json; charset=utf-8
+[11:12 INF] Request finished in 1274.8224ms 200 application/json; charset=utf-8
+[11:12 INF] Request finished in 1045.3214ms 200 application/json; charset=utf-8
+[11:12 INF] User  get list
+[11:12 INF] User  get list
+[11:12 INF] User  get list
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1357.1504ms.
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1130.0339000000001ms.
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1634.5790000000002ms.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 1132.1318ms
+[11:12 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 1359.4967000000001ms
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:12 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 1803.9872ms
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:12 INF] Request finished in 1134.4074ms 200 application/json; charset=utf-8
+[11:12 INF] Request finished in 1363.1243ms 200 application/json; charset=utf-8
+[11:12 INF] Request finished in 1835.38ms 200 application/json; charset=utf-8
+[11:12 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/task/Save application/json; charset=utf-8 302
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)'
+[11:12 INF] Route matched with {action = "Save", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)
+[11:12 INF] Authorization was successful.
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API) with arguments (["URGPelwppR20rbgqoQ/e+Os+Z8xL0FGn0FR2q0kTnlDvwQ5r12+T/IY52FnFYqWwihB7yNokrc4eln+FRcjeZ0ndyW965+pe7n2qmfKie+50rw4EGOwnUx7ulURc0zVmV9Cnn/yXDQ6tDsWto+LtNiag8FBhfm5oc2YBCSJTlNJzdT0dczNTBo7vS1S8+rSoti0EK7oqphaoqHE0WKoN3lGGEfl4e0zwB0aqC1fVKx+aZhH2sIJEsPV+NbDuPZzSgM/AZ23e4ntzCary7GQtV23DItUd9oBpLm39jb/Z/Hs="]) - Validation state: "Valid"
+[11:12 INF] Insert value: {"CurrentTask":"costam","UserDescription":"Brak","Done":false,"FK_User_Id":33,"DateCreate":"2019-04-30T11:12:47.1146125+02:00","DateEnd":"2019-05-01T11:12:47.1146125+02:00","$type":"TaskSaveCommand"}
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 917.56310000000008ms.
+[11:12 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:12 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API) in 1003.8275000000001ms
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Save (TaskMenager.API)'
+[11:12 INF] Request finished in 1047.7937ms 200 application/json; charset=utf-8
+[11:12 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskDoneList  
+[11:12 INF] Successfully validated the token.
+[11:12 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:12 INF] Route matched with {action = "TaskDoneList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)
+[11:12 INF] Authorization was successful.
+[11:12 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) - Validation state: "Valid"
+[11:12 INF] User  get list
+[11:12 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.6442ms.
+[11:12 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:12 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API) in 26.930100000000003ms
+[11:12 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskDoneList (TaskMenager.API)'
+[11:12 INF] Request finished in 30.3134ms 200 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/user/login/Pracownik1/Pracownik1  
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "UserLogin", controller = "User"}. Executing action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) with arguments (["Pracownik1","Pracownik1"]) - Validation state: "Valid"
+[11:13 INF] User Pracownik1 logged
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 139.8299ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API) in 141.3518ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Users.UserController.UserLogin (TaskMenager.API)'
+[11:13 INF] Request finished in 142.792ms 200 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskList/33  
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "TaskList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) with arguments (["33"]) - Validation state: "Valid"
+[11:13 INF] User 33 get list
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 184.9666ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) in 192.1228ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:13 INF] Request finished in 252.0556ms 200 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/Delete/11  
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "Delete", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API) with arguments (["11"]) - Validation state: "Valid"
+[11:13 INF] Delete value: {"Task_id":11,"$type":"TaskDeleteCommand"}
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.612500000000004ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API) in 39.0692ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)'
+[11:13 INF] Request finished in 60.5489ms 200 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/task/Update application/json; charset=utf-8 258
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "Update", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API) with arguments (["d2e3gfoeEcTzIZtz+ceDgQkmsFY3Eayq2Uqu5rjvMJtkWVFr1uYu1Cik4JQw/usX2keD4nHfXhPiaZmtyZMgvooZpgHtiU/mpFYLIA+hMQNwkfLCDAcG69CiZsNcH3FrP+iBnh00cyJS5rLNWrtRCP/ndB4RKBYoXXYdDtuRjkcmMj5qOB+25ZrXaXBf7bKs/+d0HhEoFihddh0O25GOR7TTiy+DyGXfLJjgo46Oeelm6u1Z7X25Hgh0CUq+QDUe"]) - Validation state: "Valid"
+[11:13 INF] Update value: {"Task_Id":11,"CurrentTask":null,"UserDescription":"bvlfds","Done":true,"FK_User_Id":33,"DateEnd":"0001-01-01T00:00:00.0000000","$type":"TaskUpdateCommand"}
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 40.5689ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API) in 41.813300000000005ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)'
+[11:13 INF] Request finished in 45.7085ms 200 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/comment/Save application/json; charset=utf-8 174
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "Save", controller = "Comment"}. Executing action TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API) with arguments (["GhL65Ib7QRh7cF2P7bTcH+EtccW4TQMNCCmnAN8Tw6HMnNgmwPN8AJ1bnWbLqxQ3Vb3uZeofgtX2TVA5m76iww5JrNHPT51WX66QQnd2sNGsHZMLI/GjcXtlBNAq1GQg8qzysxwTDe0CN6vF4k7AE4jxsI28Bsp8jzZnlKPBM/k="]) - Validation state: "Valid"
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 9.5ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API) in 23.6441ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)'
+[11:13 INF] Request finished in 38.1031ms 400 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskList/33  
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "TaskList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) with arguments (["33"]) - Validation state: "Valid"
+[11:13 INF] User 33 get list
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.8142ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) in 3.6279000000000003ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:13 INF] Request finished in 4.3439ms 200 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/Delete/10  
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "Delete", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API) with arguments (["10"]) - Validation state: "Valid"
+[11:13 INF] Delete value: {"Task_id":10,"$type":"TaskDeleteCommand"}
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.1265ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API) in 16.2884ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Delete (TaskMenager.API)'
+[11:13 INF] Request finished in 17.2831ms 200 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/task/Update application/json; charset=utf-8 258
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "Update", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API) with arguments (["MJWyftbPTFq+c79cYiEEKQkmsFY3Eayq2Uqu5rjvMJtkWVFr1uYu1Cik4JQw/usX7ckecWadDarIip3MZh9gKvl/yg6Cmc3cYp8os/yJUYvhYbD4mpTl0duEaEjdNor/dpYqK3J7EahGeCf3SpI8Bh9Dp1LZtJ6GzKuilIhZdk0g8F3wOacuF3m0jrBgnn07H0OnUtm0nobMq6KUiFl2TW6q9qrXb/xyTdqzdJOCDsxGIo7Uvs30FYlBUBV6MPJ0"]) - Validation state: "Valid"
+[11:13 INF] Update value: {"Task_Id":10,"CurrentTask":null,"UserDescription":"o","Done":true,"FK_User_Id":33,"DateEnd":"0001-01-01T00:00:00.0000000","$type":"TaskUpdateCommand"}
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.3501ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API) in 5.0665000000000004ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.Update (TaskMenager.API)'
+[11:13 INF] Request finished in 5.6199ms 200 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 POST http://localhost:44376/api/comment/Save application/json; charset=utf-8 174
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "Save", controller = "Comment"}. Executing action TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API) with arguments (["GhL65Ib7QRh7cF2P7bTcH+EtccW4TQMNCCmnAN8Tw6HMnNgmwPN8AJ1bnWbLqxQ3Vb3uZeofgtX2TVA5m76iww5JrNHPT51WX66QQnd2sNH8OgR923oPMw5lP0FJWzNl8qzysxwTDe0CN6vF4k7AE4jxsI28Bsp8jzZnlKPBM/k="]) - Validation state: "Valid"
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.1293ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API) in 1.0509ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Comments.CommentController.Save (TaskMenager.API)'
+[11:13 INF] Request finished in 4.7056ms 400 application/json; charset=utf-8
+[11:13 INF] Request starting HTTP/1.1 GET http://localhost:44376/api/task/TaskList/33  
+[11:13 INF] Successfully validated the token.
+[11:13 INF] Executing endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:13 INF] Route matched with {action = "TaskList", controller = "Task"}. Executing action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)
+[11:13 INF] Authorization was successful.
+[11:13 INF] Executing action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) with arguments (["33"]) - Validation state: "Valid"
+[11:13 INF] User 33 get list
+[11:13 INF] Executed action method TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.518600000000001ms.
+[11:13 INF] Executing ObjectResult, writing value of type 'TaskMenager.API.Models.UserResponse'.
+[11:13 INF] Executed action TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API) in 13.8087ms
+[11:13 INF] Executed endpoint 'TaskMenager.API.Controllers.Tasks.TaskController.TaskList (TaskMenager.API)'
+[11:13 INF] Request finished in 15.6151ms 200 application/json; charset=utf-8
